@@ -17,6 +17,14 @@
                         </div>
                     @endif
 
+                    <button type="submit" class="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-700">
+                        <a href="{{ route('mahasiswa-export-excel') }}">Export Excel</a>
+                    </button>
+
+                    <button type="submit" class="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-700">
+                        <a href="{{ route('mahasiswa.mahasiswa') }}">Tambah Data Mahasiswa</a>
+                    </button>
+
                     <table class="table-auto w-full border-collapse border border-gray-300 text-sm">
                         <thead>
                             <tr>
