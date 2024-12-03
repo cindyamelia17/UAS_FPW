@@ -100,6 +100,6 @@ class MahasiswaController extends Controller
         $mahasiswa->delete();
 
         // Redirect dengan pesan sukses
-        return redirect()->route('mahasiswa.index')->with('success', 'Data mahasiswa berhasil dihapus!');
+        return redirect()->route('dashboard')->with('success', 'Data mahasiswa berhasil dihapus!');
     }
 }

@@ -16,6 +16,8 @@ Route::get('/mahasiswa/form', [MahasiswaController::class, 'create'])->middlewar
 // Route untuk menyimpan data mahasiswa (POST)
 Route::post('/mahasiswa', [MahasiswaController::class, 'store'])->middleware('auth')->name('mahasiswa.store');
 
+Route::delete('/mahasiswa/{id}', [MahasiswaController::class, 'destroy'])->name('mahasiswa.destroy');
+
 // Route untuk Profile
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
